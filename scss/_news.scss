@@ -68,6 +68,9 @@ $cat-update: #2ecc71;
     gap: 16px;
     margin-bottom: 8px;
     flex-shrink: 0;
+    h3 {
+        font-size: 2.4rem;
+    }
     @media (min-width: 768px) {
         width: 220px;
         margin-bottom: 0;
@@ -123,4 +126,21 @@ $cat-update: #2ecc71;
     border-right: 2px solid $color-text-sub;
     transform: translateY(-50%) rotate(45deg);
     transition: transform $transition-speed ease;
+}
+
+.news-article {
+    margin-top: 5rem;
+    padding: 4rem;
+    border-radius: 30px;
+    background: #fff8f2;
+    @media screen and (max-width: 749px) {
+        padding: 2.5rem;
+    }
+}
+
+.news-image {
+    margin: 3rem 0;
+    img {
+        border-radius: 20px;
+    }
 }
