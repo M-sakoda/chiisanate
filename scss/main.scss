@@ -280,6 +280,9 @@ ul {
         display: flex;
         gap: 3rem;
         justify-content: flex-start;
+        @media (max-width: 749px) {
+            flex-direction: column;
+        }
         a {
             text-decoration: none;
             color: #000;
