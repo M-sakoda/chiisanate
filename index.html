@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/reset.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>ちいさなて保育園</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-inner">
+            <h1 class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+            </h1>
+            <!-- ハンバーガー -->
+            <button class="sp-btn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navi sp-navi">
+                <li><a href="./about.html">保育園について</a></li>
+                <li><a href="./food.html">食育について</a></li>
+                <li><a href="./play.html">日々のあそび</a></li>
+                <li><a href="./entry.html">入園について</a></li>
+                <li><a href="./info.html">見学について</a></li>
+                <li><a href="./form.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <section class="fv">
+            <div class="swiper fv-swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- slide 1 -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/4329466_m.jpg">
+                            <source media="(min-width: 769px)" srcset="./img/4329466_m.jpg">
+                            <img src="./img/4329466_m.jpg" alt="メインビジュアル1">
+                        </picture>
+                    </div>
+
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/31518091_m.jpg">
+                            <source media="(min-width: 769px)" srcset="./img/31518091_m.jpg">
+                            <img src="./img/31518091_m.jpg" alt="メインビジュアル2">
+                        </picture>
+                    </div>
+
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/3383396_m.jpg">
+                            <source media="(min-width: 769px)" srcset="./img/3383396_m.jpg">
+                            <img src="./img/3383396_m.jpg" alt="メインビジュアル3">
+                        </picture>
+                    </div>
+
+                    <div class="fv-copy">
+                        はじめての一歩を、やさしくみまもる
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <main class="contents">
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+
+            <div class="contents-intro">
+                <a href="" class="btn">見学について→</a>
+                <p class="contents-intro-text">ちいさなて保育園は<br>0〜2歳のお子さまを対象とした、少人数で保育を行う施設です。<br>子ども一人ひとりに丁寧に関わることができるのが特徴です。
+                </p>
+            </div>
+            <div class="contents-detail">
+                <div class="contents-detail-title">
+                    <h2>当園について</h2>
+                    <p class="contents-detail-title-sub">〜保育園で大切にしていること〜</p>
+                </div>
+                <p class="contents-text">はじめての保育園でも、安心して過ごせるように。一人ひとりの気持ちに 寄り添いながら、やさしく見守る保育を大切にしています。
+                </p>
+                <a href="./about.html" class="btn">保育園について→</a>
+                <div class="contents-detail-image">
+                    <img src="./img/3383396_m.jpg" alt="">
+                </div>
+                <div class="contents-detail-title">
+                    <h2>園での過ごし方</h2>
+                    <p class="contents-detail-title-sub">一日の流れ</p>
+                </div>
+                <div class="swiper life-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="life-card">
+                                <h3>登園</h3>
+                                <span>９：００〜</span>
+                                <p>
+                                    おはようございます。<br> 体調やご家庭での様子を確認しながら、
+                                    <br> ゆったりと一日が始まります。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="life-card">
+                                <h3>あそび</h3>
+                                <span>１０：００〜</span>
+                                <p>
+                                    室内やお外で、のびのびと過ごします。<br> 一人ひとりの興味に合わせて、
+                                    <br> 無理なく楽しめる時間です。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="life-card">
+                                <h3>おひるごはん</h3>
+                                <span>１１：３０〜</span>
+                                <p>
+                                    一人ひとりのペースに合わせて、<br> ゆっくりと食事を楽しみます。
+                                    <br> 無理に食べさせることはありません。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="life-card">
+                                <h3>おひるね</h3>
+                                <span>１２：３０〜</span>
+                                <p>
+                                    安心できる環境の中で、ぐっすりと<br> 休みます。生活リズムに合わせて
+                                    <br> 無理なく対応します。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="life-card">
+                                <h3>お迎え</h3>
+                                <span>１５：００〜</span>
+                                <p>
+                                    一日の様子をお伝えしながら、<br> 保護者の方へお引き渡しします。
+                                    <br> ご家庭との連携も大切にしています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ページネーション -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 前後の矢印 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!--  -->
+                <div class="contents-detail-title">
+                    <h2>食育について</h2>
+                    <p class="contents-detail-title-sub">はじめての”食べる”を大切に</p>
+                </div>
+                <p class="contents-text">手作り給食で、あたたかい食事を提供しています。 栄養バランスを考えながら、月齢に合わせた対応やアレルギーにも配慮し、 一人ひとりが安心して「食べる楽しさ」を感じられる環境を大切にしています。
+                </p>
+                <a href="./food.html" class="btn">食育について→</a>
+                <!--  -->
+                <div class="contents-detail-title">
+                    <h2>日々の遊び</h2>
+                </div>
+                <div class="contents-detail-flex">
+                    <img class="contents-detail-flex--rigth" src="./img/31518091_m.jpg" alt="">
+                    <img class="contents-detail-flex--left" src="./img/4329466_m.jpg" alt="">
+                </div>
+                <a href="./play.html" class="btn">日々のあそびについて→</a>
+
+                <div class="contents-detail-title">
+                    <h2>お知らせ</h2>
+                </div>
+                <dl class="news-list">
+
+
+                    <div class="news-list-box">
+                        <dt>2026.04.01</dt>
+                        <dd>
+                            <a href="">
+                                <p class="news-title"><a href="">はじめての登園のようす</a></p>
+                            </a>
+                        </dd>
+                    </div>
+                    <div class="news-list-box">
+                        <dt>2026.03.28</dt>
+                        <dd>
+                            <a href="">
+                                <p class="news-title"><a href="">お外あそびを楽しみました</a></p>
+                            </a>
+                        </dd>
+                    </div>
+                    <div class="news-list-box">
+                        <dt>2026.03.20</dt>
+                        <dd>
+                            <a href="">
+                                <p class="news-title"><a href="">今日の給食をご紹介します</a></p>
+                            </a>
+                        </dd>
+                    </div>
+                </dl>
+                <a href="./news.html" class="btn">お知らせ→</a>
+                <div class="contents-detail-title">
+                    <h2>アクセス</h2>
+                </div>
+                <div class="contents-detail-flex">
+                    <div class="contents-detail-flex-image"><img src="./img/pc_school_main_hills2.jpg" alt=""></div>
+                    <dl class="contents-detail-flex-address">
+                        <dt>〒880-0000</dt>
+                        <dd> 宮崎県宮崎市ひなた台2丁目3-5 </dd>
+                        <dd class="contents-detail-flex-text">JR宮崎駅から自転車で10分 駐車場あり</dd>
+                    </dl>
+                </div>
+                <div class="contents-last">
+                    <a href="./info.html" class="btn">見学について→</a>
+                    <a href="./entry.html" class="btn">入園について→</a>
+                </div>
+            </div>
+            <!-- /contents -->
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-hills">
+            <svg class="hill-back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+                <defs><filter id="handdrawn"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+                <path d="M-100,300 L-100,50 Q300,-50 750,100 Q1200,250 1600,0 L1600,300 Z" fill="#E2F0D9" opacity="0.7" filter="url(#handdrawn)" />
+            </svg>
+            <svg class="hill-front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+                <defs><filter id="handdrawn"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+                <path d="M-100,300 L-100,100 Q400,0 900,150 Q1300,250 1600,80 L1600,300 Z" fill="#D6EAD4" filter="url(#handdrawn)" />
+            </svg>
+        </div>
+
+        <div class="footer-inner">
+            <ul class="navi-2">
+                <li><a href="./about.html">保育園について</a></li>
+                <li><a href="./food.html">食育について</a></li>
+                <li><a href="./play.html">日々のあそび</a></li>
+                <li><a href="./entry.html">入園について</a></li>
+                <li><a href="./news.html">お知らせ</a></li>
+                <li><a href="./info.html">見学について</a></li>
+                <li><a href="./form.html">お問い合わせ</a></li>
+            </ul>
+            <div class="footer-info">
+                <h3 class="logo">ちいさなて保育園</h3>
+                <dl>
+                    <dt>〒880-0000</dt>
+                    <dd> 宮崎県宮崎市ひなた台2丁目3-5 </dd>
+                    <dd>0985-XX-XXX</dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+
+    <button id="topBtn" class="top-btn">TOP</button>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper-2.js"></script>
+    <script src="./js/contets.js"></script>
+    <script src="./js/humberger.js"></script>
+    <script src="./js/top.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+// --- 変数定義 ---
+$color-text-main: #333333;
+$color-text-sub: #888888;
+$color-border: rgba(0, 0, 0, 0.08);
+$color-hover-bg: rgba(255, 255, 255, 0.6); // ホバー時の半透明白背景
+$color-hover-border: rgba(0, 0, 0, 0.15);
+$transition-speed: 0.3s;
+// カテゴリーカラー
+$cat-info: #4a90e2;
+$cat-event: #e24a8d;
+$cat-update: #2ecc71;
+// --- スタイル ---
+.news-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    h2 {
+        margin-top: 10rem;
+    }
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    color: $color-text-main;
+}
+
+.news-lists {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    margin: 5rem auto;
+}
+
+.news-item {
+    border-bottom: 1px solid $color-border;
+    &:first-child {
+        border-top: 1px solid $color-border;
+    }
+}
+
+// リンク部分（ここが半透明で変化します）
+.news-link {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 16px;
+    text-decoration: none;
+    color: $color-text-main;
+    position: relative;
+    transition: background-color $transition-speed ease, border-color $transition-speed ease;
+    border-left: 4px solid transparent; // ホバー時のアクセント用
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+// メタ情報（日付・カテゴリ）
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+    @media (min-width: 768px) {
+        width: 220px;
+        margin-bottom: 0;
+    }
+}
+
+.news-date {
+    font-size: 14px;
+    color: $color-text-sub;
+    font-weight: 500;
+}
+
+.news-category {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #fff;
+    &.cat-info {
+        background-color: $cat-info;
+    }
+    &.cat-event {
+        background-color: $cat-event;
+    }
+    &.cat-update {
+        background-color: $cat-update;
+    }
+}
+
+// 記事本文
+.news-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; // 1行で収める場合（レスポンシブで調整可）
+    @media (max-width: 767px) {
+        white-space: normal; // スマホでは折り返す
+    }
+}
+
+// 右側の矢印アイコン（CSSで表現）
+.news-arrow {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid $color-text-sub;
+    border-right: 2px solid $color-text-sub;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform $transition-speed ease;
+}

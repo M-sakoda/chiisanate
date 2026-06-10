@@ -1,0 +1,85 @@
+.entry {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    &-contents {
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        h2 {
+            padding-top: 4rem;
+            margin-bottom: 3rem;
+            @media (max-width: 749px) {
+                margin-bottom: 2rem;
+            }
+        }
+        p {
+            padding: 3rem 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            @media (max-width: 749px) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &-image {
+        max-width: 740px;
+        width: 100%;
+        margin: 0 auto;
+        @media (max-width: 749px) {
+            margin-bottom: 2rem;
+            padding: 0 1.5rem;
+        }
+    }
+    &-list {
+        li {
+            list-style-position: inside;
+        }
+    }
+    &-detail {
+        h3 {
+            color: #F4A261;
+            font-weight: bold;
+            font-size: 3.2rem;
+            text-align: center;
+            margin: 4rem 0;
+            @media (max-width: 749px) {
+                font-size: 2.6rem;
+            }
+        }
+        ul {
+            flex-direction: column;
+            // padding: 0;
+            @media (max-width: 749px) {
+                padding: 1.5rem;
+            }
+        }
+        p {
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 0;
+        }
+        dl {
+            padding: 4rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            @media (max-width: 749px) {
+                padding: 0;
+            }
+            dt {
+                padding-top: 0.5rem;
+            }
+            dd {
+                padding-bottom: 3rem;
+            }
+        }
+    }
+    &-center {
+        text-align: center;
+    }
+    &-text {
+        text-indent: 4rem;
+        padding-top: 2rem;
+    }
+}

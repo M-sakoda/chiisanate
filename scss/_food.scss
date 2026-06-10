@@ -1,0 +1,47 @@
+.food {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    &-contents {
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        h2 {
+            padding-top: 4rem;
+            @media (max-width: 749px) {
+                margin-bottom: 2rem;
+            }
+        }
+        p {
+            padding: 3rem 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            @media (max-width: 749px) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &-image {
+        max-width: 740px;
+        width: 100%;
+        margin: 0 auto;
+        @media (max-width: 749px) {
+            margin-bottom: 2rem;
+            padding: 0 1.5rem;
+        }
+    }
+    &-detail {
+        ul {
+            flex-direction: column;
+            padding: 0;
+            @media (max-width: 749px) {
+                padding: 1.5rem;
+            }
+        }
+        p {
+            font-size: 1.6rem;
+            font-weight: normal;
+        }
+    }
+}

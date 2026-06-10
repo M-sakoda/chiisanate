@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/reset.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>小規模保育園 見学お問い合わせフォーム</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header-inner">
+            <h1 class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+            </h1>
+            <!-- ハンバーガー -->
+            <button class="sp-btn" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+            <ul class="navi sp-navi">
+                <li><a href="./about.html">保育園について</a></li>
+                <li><a href="./food.html">食育について</a></li>
+                <li><a href="./play.html">日々のあそび</a></li>
+                <li><a href="./entry.html">入園について</a></li>
+                <li><a href="./info.html">見学について</a></li>
+                <li><a href="./form.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>小規模保育園 見学お申し込み</h2>
+        <p class="form-lead">以下の項目をご入力の上、送信してください。</p>
+
+        <form action="#" method="POST">
+
+            <div class="form-section-title">保護者様・お子様について</div>
+
+            <div class="form-group">
+                <label for="name">お名前<span class="badge-required">必須</span></label>
+                <input type="text" id="name" name="name" placeholder="山田 花子" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reading">ふりがな<span class="badge-required">必須</span></label>
+                <input type="text" id="reading" name="reading" placeholder="やまだ はなこ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス<span class="badge-required">必須</span></label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age-months">お子様の月齢（学年）<span class="badge-required">必須</span></label>
+                <select id="age-months" name="age_months" required>
+                <option value="">選択してください</option>
+                <option value="0歳（生後57日〜6ヶ月）">0歳（生後57日〜6ヶ月）</option>
+                <option value="0歳（生後7ヶ月〜11ヶ月）">0歳（生後7ヶ月〜11ヶ月）</option>
+                <option value="1歳児クラス">1歳児クラス</option>
+                <option value="2歳児クラス">2歳児クラス</option>
+                <option value="出産予定（妊娠中）">出産予定（妊娠中）</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+                <label>お子様の性別<span class="badge-required">必須</span></label>
+                <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="gender" value="男の子" required> 男の子</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="女の子"> 女の子</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="回答しない"> 回答しない・妊娠中</label>
+                </div>
+            </div>
+
+
+            <div class="form-section-title">見学希望日について</div>
+
+            <div class="form-group">
+                <label for="visit-date-1">第一希望日<span class="badge-required">必須</span></label>
+                <input type="date" id="visit-date-1" name="visit_date_1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="visit-date-2">第二希望日<span class="badge-required">必須</span></label>
+                <input type="date" id="visit-date-2" name="visit_date_2" required>
+            </div>
+
+
+            <div class="form-section-title">その他</div>
+
+            <div class="form-group">
+                <label for="message">ご質問など<span class="badge-optional">任意</span></label>
+                <textarea id="message" name="message" rows="4" placeholder="質問や、アレルギー等の配慮事項、知りたいことなどがあればご記入ください。"></textarea>
+            </div>
+
+
+            <div class="form-section-title">確認事項</div>
+
+            <label>個人情報の取り扱いについて<span class="badge-required">必須</span></label>
+            <div class="privacy-policy">
+                当園は、お預かりした個人情報を見学の受付および今後の入園に関するご案内・ご連絡の目的以外には利用いたしません。法令に基づく場合を除き、第三者に提供することはございません。
+            </div>
+
+            <div class="agreement-box">
+                <label class="checkbox-label">
+                <input type="checkbox" name="privacy_agreement" value="同意する" required>
+                個人情報保護方針に同意する
+            </label>
+            </div>
+
+            <button type="submit" class="btn-submit">内容を確認して送信する</button>
+
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-hills">
+            <svg class="hill-back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+              <defs><filter id="handdrawn"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+              <path d="M-100,300 L-100,50 Q300,-50 750,100 Q1200,250 1600,0 L1600,300 Z" fill="#E2F0D9" opacity="0.7" filter="url(#handdrawn)" />
+          </svg>
+            <svg class="hill-front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+              <defs><filter id="handdrawn"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+              <path d="M-100,300 L-100,100 Q400,0 900,150 Q1300,250 1600,80 L1600,300 Z" fill="#D6EAD4" filter="url(#handdrawn)" />
+          </svg>
+        </div>
+
+        <div class="footer-inner">
+            <ul class="navi-2">
+                <li><a href="./about.html">保育園について</a></li>
+                <li><a href="./food.html">食育について</a></li>
+                <li><a href="./play.html">日々のあそび</a></li>
+                <li><a href="./entry.html">入園について</a></li>
+                <li><a href="">お知らせ</a></li>
+                <li><a href="./info.html">見学について</a></li>
+                <li><a href="">お問い合わせ</a></li>
+            </ul>
+            <div class="footer-info">
+                <h3 class="logo">ちいさなて保育園</h3>
+                <dl>
+                    <dt>〒880-0000</dt>
+                    <dd> 宮崎県宮崎市ひなた台2丁目3-5 </dd>
+                    <dd>0985-XX-XXX</dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper-2.js"></script>
+    <script src="./js/contets.js"></script>
+    <script src="./js/humberger.js"></script>
+    <script src="./js/top.js"></script>
+</body>
+
+</html>
