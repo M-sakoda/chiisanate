@@ -562,9 +562,6 @@ h2-sub {
   margin-bottom: 8px;
   flex-shrink: 0;
 }
-.news-meta h3 {
-  font-size: 2.4rem;
-}
 @media (min-width: 768px) {
   .news-meta {
     width: 220px;
@@ -628,6 +625,9 @@ h2-sub {
   padding: 4rem;
   border-radius: 30px;
   background: #fff8f2;
+}
+.news-article h3 {
+  font-size: 2.6rem;
 }
 @media screen and (max-width: 749px) {
   .news-article {
