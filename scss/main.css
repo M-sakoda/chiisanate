@@ -53,15 +53,9 @@ h2-sub {
   padding: 0 1.5rem;
 }
 .about-intro {
-  max-width: 960px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
-}
-@media (max-width: 749px) {
-  .about-intro {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 .about-block {
   display: flex;
