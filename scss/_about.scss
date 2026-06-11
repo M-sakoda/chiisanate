@@ -5,7 +5,12 @@
     padding: 0 1.5rem;
     &-intro {
         max-width: 960px;
+        width: 100%;
         margin: 0 auto;
+        @media (max-width: 749px) {
+            width: 100%;
+            max-width: 100%;
+        }
     }
     &-block {
         display: flex;

@@ -54,7 +54,14 @@ h2-sub {
 }
 .about-intro {
   max-width: 960px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 749px) {
+  .about-intro {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .about-block {
   display: flex;
@@ -953,7 +960,7 @@ ul li a:hover {
 }
 @media screen and (max-width: 749px) {
   .fv-copy {
-    right: 38%;
+    right: 40%;
     transform: translateY(10%);
     font-size: 2rem;
   }
