@@ -123,6 +123,12 @@ h2-sub {
 .about h3 {
   font-size: 2.2rem;
 }
+.about p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2;
+  margin: 0;
+}
 .about-image {
   width: 50%;
   display: flex;
