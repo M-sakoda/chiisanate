@@ -14,7 +14,6 @@
         width: 100%;
         margin: 10rem auto 10rem;
         align-items: center;
-        /* 縦方向の中央揃え（写真と文字のバランス用） */
         @media (max-width: 749px) {
             margin: 5rem auto 5rem auto;
             flex-direction: column;
@@ -25,43 +24,30 @@
                 flex-direction: column;
             }
         }
-        /* 最後のブロック（園長あいさつ）だけ横並び（flex）にしない設定 */
         &:last-of-type {
             flex-direction: column;
-            /* 縦並びにする */
             gap: 3rem;
-            /* 文章と写真の間の余白 */
-            /* 縦並びにするので、中の幅を100%に広げる */
             .about-text,
             .about-image {
                 width: 100%;
             }
-            /* 園長あいさつの本文だけは、左寄せ（または両端揃え）が読みやすいです */
-            // .about-text p {
-            //     text-align: justify;
-            // }
         }
     }
     &-text {
         width: calc(100% / 2);
-        /* スマホ・PCの基本は中央揃え */
         text-align: center;
         @media (max-width: 749px) {
             width: 100%;
         }
-        /* サブタイトル用の設定（もし必要であれば） */
         .about-support-sub {
             text-align: center;
             color: #f4a261;
             font-weight: bold;
             margin-bottom: 1rem;
         }
-        /* ⭐ 構造に合わせて正しい位置に移動しました */
         .about-name {
             text-align: end;
-            /* 右寄せにする */
             display: block;
-            /* 確実に効かせるためにブロック化 */
             font-size: 1.8rem;
             font-weight: bold;
             margin-top: 1.5rem;
@@ -82,7 +68,6 @@
         font-size: 2.2rem;
     }
     p {
-        // text-align: justify;
         font-size: 1.8rem;
         font-weight: bold;
         line-height: 2;
@@ -90,7 +75,6 @@
     }
     &-image {
         width: calc(100% / 2);
-        /* block側でmarginを制御するため、ここは4rem 0を削除 */
         display: flex;
         justify-content: center;
         @media (max-width: 749px) {
@@ -98,7 +82,6 @@
         }
         img {
             max-width: 100%;
-            /* 画像が枠からはみ出るのを防ぐ */
             height: auto;
             border-radius: 5px;
         }

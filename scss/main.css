@@ -63,7 +63,6 @@ h2-sub {
   width: 100%;
   margin: 10rem auto 10rem;
   align-items: center;
-  /* 縦方向の中央揃え（写真と文字のバランス用） */
 }
 @media (max-width: 749px) {
   .about-block {
@@ -79,26 +78,16 @@ h2-sub {
     flex-direction: column;
   }
 }
-.about-block {
-  /* 最後のブロック（園長あいさつ）だけ横並び（flex）にしない設定 */
-}
 .about-block:last-of-type {
   flex-direction: column;
-  /* 縦並びにする */
   gap: 3rem;
-  /* 文章と写真の間の余白 */
-  /* 縦並びにするので、中の幅を100%に広げる */
 }
 .about-block:last-of-type .about-text,
 .about-block:last-of-type .about-image {
   width: 100%;
 }
-.about-block:last-of-type {
-  /* 園長あいさつの本文だけは、左寄せ（または両端揃え）が読みやすいです */
-}
 .about-text {
   width: 50%;
-  /* スマホ・PCの基本は中央揃え */
   text-align: center;
 }
 @media (max-width: 749px) {
@@ -106,23 +95,15 @@ h2-sub {
     width: 100%;
   }
 }
-.about-text {
-  /* サブタイトル用の設定（もし必要であれば） */
-}
 .about-text .about-support-sub {
   text-align: center;
   color: #f4a261;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.about-text {
-  /* ⭐ 構造に合わせて正しい位置に移動しました */
-}
 .about-text .about-name {
   text-align: end;
-  /* 右寄せにする */
   display: block;
-  /* 確実に効かせるためにブロック化 */
   font-size: 1.8rem;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -139,11 +120,9 @@ h2-sub {
   margin-bottom: 4rem;
 }
 .about h3 {
-  /* margin: 4rem 0; だと上の余白が広すぎるため、下にだけつけるのがおすすめです */
   font-size: 2.2rem;
 }
 .about p {
-  text-align: justify;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2;
@@ -151,7 +130,6 @@ h2-sub {
 }
 .about-image {
   width: 50%;
-  /* block側でmarginを制御するため、ここは4rem 0を削除 */
   display: flex;
   justify-content: center;
 }
@@ -162,7 +140,6 @@ h2-sub {
 }
 .about-image img {
   max-width: 100%;
-  /* 画像が枠からはみ出るのを防ぐ */
   height: auto;
   border-radius: 5px;
 }
@@ -210,11 +187,6 @@ h2-sub {
 .food-detail ul {
   flex-direction: column;
   padding: 0;
-}
-@media (max-width: 749px) {
-  .food-detail ul {
-    padding: 1.5rem;
-  }
 }
 .food-detail p {
   font-size: 1.6rem;
@@ -1000,7 +972,6 @@ ul li a:hover {
   font-weight: bold;
   font-size: 2.6rem;
   line-height: 60px;
-  text-align: justify;
 }
 @media screen and (max-width: 749px) {
   .contents-text {
