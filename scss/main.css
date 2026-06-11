@@ -87,6 +87,9 @@ h2-sub {
 .about-block:last-of-type .about-image {
   width: 100%;
 }
+.about-status {
+  text-align: left;
+}
 .about-text {
   width: 50%;
   text-align: center;
@@ -971,7 +974,6 @@ ul li a:hover {
   padding: 0 2rem;
   font-weight: bold;
   font-size: 2.6rem;
-  line-height: 60px;
 }
 @media screen and (max-width: 749px) {
   .contents-text {
